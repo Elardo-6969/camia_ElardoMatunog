@@ -37,9 +37,9 @@ Easy Expense Tracker for Scholars
 
 [5] Exit
 
-Enter Choice: 1
+Enter Choice: 3
 
-...
+No expenses to delete.
 
 ## Contributors:
 - Student 1: Elardo, Allaina Marie A. (research and suggestions)
