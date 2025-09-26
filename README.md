@@ -26,13 +26,19 @@
 
 ## Example Output:
 Easy Expense Tracker for Scholars
+
 [1] Add Expense
+
 [2] Show Expenses
+
 [3] Delete Last Expense
+
 [4] Check Card Balance
+
 [5] Exit
 
 Enter Choice: 1
+
 ...
 
 ## Contributors:
