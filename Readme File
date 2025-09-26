@@ -1,8 +1,8 @@
-##Project Title: Easy Expense Tracker for scholars
+## Project Title: Easy Expense Tracker for scholars
 
-##Project Descrption: This is a paired project about a budget and fund checker for a grade in Computer Science II
+## Project Descrption: This is a paired project about a budget and fund checker for a grade in Computer Science II
 
-##Features:
+## Features:
 - Fund management
 
 - Balance Checker
@@ -13,7 +13,7 @@
 
 - Fund Summary
 
-##How to run the program:
+## How to run the program:
 1. Make sure you have Python installed.
 
 2. Download the file 'grade_calculator.py`.
@@ -24,7 +24,7 @@
 
 5. Follow the on-screen instructions to enter student names and grades.
 
-##Example Output:
+## Example Output:
 Easy Expense Tracker for Scholars
 [1] Add Expense
 [2] Show Expenses
@@ -35,6 +35,6 @@ Easy Expense Tracker for Scholars
 Enter Choice: 1
 ...
 
-##Contributors:
+## Contributors:
 - Student 1: Elardo, Allaina Marie A. (research and suggestions)
 - Student 2: Matunog, Mateo A. (programmer and typist)
