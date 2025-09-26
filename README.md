@@ -26,6 +26,7 @@
 
 ## Example Output:
 Easy Expense Tracker for Scholars
+Menu:
 
 [1] Add Expense
 
