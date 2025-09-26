@@ -1,6 +1,7 @@
 ## Project Title: Easy Expense Tracker for scholars
 
-## Project Description: This is a paired project about a budget and fund checker for a grade in Computer Science II
+## Project Description: 
+This is a paired project about a budget and fund checker for a grade in Computer Science II
 
 ## Features:
 - Fund management
@@ -26,6 +27,7 @@
 
 ## Example Output:
 Easy Expense Tracker for Scholars
+
 Menu:
 
 [1] Add Expense
