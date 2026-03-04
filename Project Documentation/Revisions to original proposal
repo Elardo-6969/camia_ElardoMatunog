@@ -1,4 +1,16 @@
-A. Features (updated):
+Title: SStipend: Budget Tracker
+
+Problem Statement: Scholars often struggle to manage their limited financial resources due to the lack of efficient tools for tracking expenses and monitoring 
+their Pisay EVC Canteen Card balance. Manual methods are prone to errors and make budgeting difficult. The SStipend: Budget Tracker addresses this problem by 
+automating expense tracking and balance monitoring. Through real-time updates and organized financial summaries, the app simplifies fund management, promotes 
+financial responsibility, and supports informed decision-making among students.
+
+Project Objectives: 
+- To design a user-friendly interface that allows scholars to easily record and review their daily expenditures.
+- To automate the monitoring of the Pisay EVC Canteen Card balance and generate real-time updates.
+- To minimize human error in manual expense recording through the use of automation and digital computation.
+
+Features (updated):
 1) Automatic File Creation (new)
 - Creates input.txt if it does not exist (stores purchase history).
 - Creates balance.txt when user sets a balance.
@@ -48,7 +60,7 @@ Displays results in a new Treeview window.
 - Calculates total expenses per month (January–December).
 - Displays results in a Treeview window.
 
-B. File/function structure
+File/function structure
 This program is a single Python file application.
 It interacts with two external text files:
 - input.txt: Stores transaction records (one per line, space-separated).
@@ -67,11 +79,11 @@ Functions:
 10) sum_month(): Calculates and displays total costs per month in a new window.
 11) info_popup(type): A dynamic error handler that shows different messages based on the error type.
 
-C. New Technologies/Tools:
+New Technologies/Tools:
 1) Tkinter and ttk: The graphical interface was developed using Tkinter, Python’s built-in GUI framework. 
 The ttk module was utilized for enhanced widgets such as the Treeview table.
 
-D. References:
+References:
 Python Software Foundation. (2024). Python documentation. https://docs.python.org/3/
 
 Summerfield, M. (2018). Programming in Python 3: A complete introduction to the Python language (2nd ed.). Addison-Wesley Professional.
