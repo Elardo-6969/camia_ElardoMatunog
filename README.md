@@ -28,15 +28,21 @@ Save your code as: budget_tracker.py in a folder of your choice.
 
 ## Example Output:
 Purchase Quantity: 2
+
 Purchase Unit (e.g. box): pieces 
+
 Purchase Description: lumpia
+
 Unit Cost (₱): 25
 
 After clicking submit, the table will update based on the inputted information.
 
 If the current balance was: 
+
 Balance: 500.0
+
 After submitting the expense:
+
 Balance: 450.0
 
 ## Contributors:
