@@ -1,0 +1,73 @@
+The proposed Budget Tracker system was developed as a standalone desktop application using Python. Both the graphical user 
+interface (GUI) and application logic are integrated within the same environment. Data persistence is handled locally 
+through structured text files, eliminating the need for external servers or cloud-based storage.
+
+A. Technologies Used and Justification:
+1) Python: Python was selected due to its readability, extensive standard library, and rapid development capabilities. 
+Its built-in support for file handling, exception management, and GUI integration makes it suitable for small-scale 
+financial management applications.
+2) Tkinter & ttk: The graphical interface was implemented using the Tkinter library, with the ttk module for enhanced 
+widget styling. Tkinter was chosen because it is lightweight, cross-platform, and bundled with Python, removing external 
+dependency requirements.
+The ttk.Treeview widget was used to display structured tabular data, including purchase history and summarized expense 
+reports.
+3) File-based storage: 
+  Two text files were utilized:
+    -input.txt: stores transaction records
+    -balance.txt: stores the current user balance
+The os.path.isfile() method ensures that necessary files are created if absent, preventing runtime errors. File operations 
+were implemented using Python’s built-in open() function in read, write, and append modes.
+This approach was selected for simplicity and ease of deployment, particularly for single-user environments.
+
+B. Implementations of Core functions:
+1) Expense Entry and Validation
+The submit() function manages expense submission. The system retrieves user inputs from GUI entry fields and performs 
+validation using nested try-except blocks.
+Validation rules include:
+  -Quantity must be an integer greater than zero.
+  -Price must be a positive floating-point value.
+  -Balance must exist before expense submission.
+
+2) Balance Management
+Balance handling is divided into two processes:
+a) Initial Balance Entry
+The balance_get() function validates numeric input and ensures the value is greater than zero before writing it to balance.txt.
+b) Balance Addition
+The addBalance() function opens a secondary Toplevel window for incremental balance updates. The updated value is read, computed, 
+and rewritten to the file, ensuring persistent storage.
+
+3) Expense Deletion Mechanism
+The delete_item() function enables removal of a selected transaction from both the GUI and the persistent file. The row index from 
+the Treeview widget is used to delete the corresponding line in input.txt.
+The confirm_delete() and choice_del() functions implement a confirmation dialog before clearing all expense history. This reduces 
+accidental data loss and supports user control over stored information.
+
+4) Expense Summarization
+The system provides two summarization methods:
+a) Category-Based Summary (sum_cat())
+The application parses each line of input.txt, extracts the category and total cost, and aggregates totals using predefined category 
+variables.
+b) Month-Based Summary (sum_month())
+The date string is parsed to extract the month, and totals are accumulated per month.
+Results are displayed in new Treeview windows for structured visualization.
+
+C. Backend–Frontend Interaction:
+The application operates without network communication. Backend logic and frontend components interact through:
+- Widget value retrieval (Entry.get(), StringVar.get())
+- Event-driven callbacks attached to buttons
+- Dynamic updates to Treeview widgets
+All operations are executed locally and synchronously.
+
+D. Design Decisions and Trade-Offs:
+1) Predefined expense categories were used to standardize classification and simplify aggregation logic.
+Trade-off: Users cannot dynamically define new categories, limiting customization.
+2) Global variables were utilized for summary computations and Toplevel window references to simplify cross-functional data sharing.
+Trade-off: While this reduces parameter passing complexity, it may reduce modularity and scalability in larger systems.
+
+E. Ethical and Responsible Programming Considerations:
+1) User Privacy: The system operates entirely offline, ensuring that financial data is not transmitted externally. No 
+third-party services are integrated, protecting user spending information from external exposure.
+
+2) Data Integrity and Error Prevention: Input validation mechanisms prevent invalid financial entries. Exception handling 
+prevents system crashes due to incorrect user input. Confirmation dialogs reduce accidental deletion of financial records.
+These design choices prioritize user safety and reliability.
