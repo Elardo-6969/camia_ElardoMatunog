@@ -6,7 +6,6 @@ The budget tracker is a desktop-based financial management application developed
 The application includes input validation to prevent incorrect data entry and provides user-friendly pop-up notifications for errors. Additional features such as deleting selected transactions, clearing all records with confirmation, and adding balance dynamically improve usability and control. Overall, the project demonstrates practical implementation of file handling, GUI development, event-driven programming, and basic financial data processing in Python.
 
 ## Features:
-- Automatic File Creation (new)
 - Add Expense Entry 
 - Delete Selected Item (new)
 - Delete All History (new)
