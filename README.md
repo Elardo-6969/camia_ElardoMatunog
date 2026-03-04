@@ -17,7 +17,7 @@ The application includes input validation to prevent incorrect data entry and pr
 ## How to run the program:
 1. Make sure you have Python installed.
 
-2.Save the File
+2. Save the File
 Save your code as: budget_tracker.py in a folder of your choice.
 
 3. Open a terminal or command prompt.
