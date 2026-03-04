@@ -36,7 +36,7 @@ Purchase Description: lumpia
 Unit Cost (₱): 25
 
 
-After clicking submit, the table will update based on the inputted information.
+After clicking submit, an updated table will appear based on the inputted information.
 
 If the current balance was: 
 
