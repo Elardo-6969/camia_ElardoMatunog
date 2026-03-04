@@ -1,0 +1,93 @@
+A. Features (updated):
+1) Automatic File Creation (new)
+- Creates input.txt if it does not exist (stores purchase history).
+- Creates balance.txt when user sets a balance.
+
+2) Add Expense Entry 
+- User inputs:
+    - Quantity
+    - Unit
+    - Description
+    - Unit Cost
+    - Category
+
+3) Delete Selected Item (new)
+- Removes selected row from:
+    - Treeview table
+    - input.txt file
+
+4) Delete All History (new)
+- Confirmation popup appears.
+- If confirmed:
+    - Clears entire table
+    - Clears input.txt
+
+5) Balance Management
+-User can:
+    - Set initial balance
+    - Add additional balance later
+- Balance is stored in balance.txt
+- Balance updates dynamically on screen.
+
+6) Categorizing expenses (new)
+
+7) Expense summary:
+1. by category:
+- Calculates total spending per category:
+    - Food
+    - Toiletries
+    - Electronics
+    - School
+    - Miscellaneous
+    - Clothing
+    - Transportation
+Displays results in a new Treeview window.
+2. by month:
+- Reads stored dates.
+- Extracts month from each entry.
+- Calculates total expenses per month (January–December).
+- Displays results in a Treeview window.
+
+B. File/function structure
+This program is a single Python file application.
+It interacts with two external text files:
+- input.txt: Stores transaction records (one per line, space-separated).
+- balance.txt: Stores a single numerical value representing the current user balance.
+
+Functions:
+1) submit(): Validates input, updates the balance file, writes to input.txt, and refreshes the table.
+2) balance_get(): Sets the initial balance for first-time users.
+3) addBalance(): Opens a popup window to input additional funds.
+4) addBalance_Get(): Processes the addition and updates the UI and file.
+5) delete_item(): Removes a specific selected row from the table and the text file.
+6) confirm_delete(): Triggers a confirmation window for clearing all data.
+7) choice_del(opt): Executes the total wipe of history if "yes" is selected.
+8) summary(): Opens a selection window to choose a summary type.
+9) sum_cat(): Calculates and displays total costs per category in a new window.
+10) sum_month(): Calculates and displays total costs per month in a new window.
+11) info_popup(type): A dynamic error handler that shows different messages based on the error type.
+
+C. New Technologies/Tools:
+1) Tkinter and ttk: The graphical interface was developed using Tkinter, Python’s built-in GUI framework. 
+The ttk module was utilized for enhanced widgets such as the Treeview table.
+
+D. References:
+Python Software Foundation. (2024). Python documentation. https://docs.python.org/3/
+
+Summerfield, M. (2018). Programming in Python 3: A complete introduction to the Python language (2nd ed.). Addison-Wesley Professional.
+
+Lutz, M. (2013). Learning Python (5th ed.). O’Reilly Media.
+
+Grayson, J. E. (2000). Python and Tkinter programming. Manning Publications.
+
+Shipman, J. W. (2013). Tkinter 8.5 reference: A GUI for Python. New Mexico Tech. http://www.nmt.edu/tcc/help/pubs/tkinter/
+
+Beazley, D. M. (2009). Python essential reference (4th ed.). Addison-Wesley Professional.
+
+Sommerville, I. (2016). Software engineering (10th ed.). Pearson.
+
+Pressman, R. S., & Maxim, B. R. (2020). Software engineering: A practitioner’s approach (9th ed.). McGraw-Hill Education.
+
+Stallings, W., & Brown, L. (2018). Computer security: Principles and practice (4th ed.). Pearson.
+
+Nielsen, J. (1994). Usability engineering. Morgan Kaufmann.
