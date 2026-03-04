@@ -1,4 +1,5 @@
-## Project Title: SStipend: Budget Tracker
+## Project Title: 
+SStipend: Budget Tracker
 
 ## Project Description: 
 The budget tracker is a desktop-based financial management application developed using Python and the Tkinter library. It allows users to record daily expenses, categorize purchases, monitor their remaining balance, and generate summaries of spending by category or month. The system stores data locally using text files, ensuring that purchase history and balance information persist even after the program is closed.
