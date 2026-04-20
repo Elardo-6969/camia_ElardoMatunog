@@ -11,7 +11,9 @@ The application includes input validation to prevent incorrect data entry and pr
 - Delete All History (new)
 - Balance Management
 - Categorizing expenses (new)
-- Expense summary
+- Expense Summary
+- Search Function
+- Edit Past Purchases
 
 ## How to run the program:
 1. Make sure you have Python installed. If Python is not installed, download it from:
