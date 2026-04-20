@@ -49,5 +49,5 @@ After submitting the expense:
 Balance: 450.0
 
 ## Contributors:
-- Student 1: Elardo, Allaina Marie A. (research and suggestions)
-- Student 2: Matunog, Mateo A. (programmer and typist)
+- Student 1: Elardo, Allaina Marie A. (programmer)
+- Student 2: Matunog, Mateo A. (programmer and research)
